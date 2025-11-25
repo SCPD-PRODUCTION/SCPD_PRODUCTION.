@@ -2,8 +2,8 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>SCPD_PRODUCTION</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCPD_PRODUCTION</title>
 
     <!-- STYLE -->
     <link rel="stylesheet" href="style.css">
@@ -12,31 +12,34 @@
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
 </head>
 <body>
 
     <!-- HEADER -->
-    <div id="header">
+    <header>
         <div id="menuBtn" onclick="toggleSidebar()">☰</div>
-        SCPD_PRODUCTION
+        <h1>SCPD_PRODUCTION</h1>
         <div id="authArea"></div>
-    </div>
+    </header>
 
     <!-- SIDEBAR -->
-    <div id="sidebar">
-        <a onclick="openScreen('upscale')">📷 Upscale Photo HD</a>
-        <a onclick="openScreen('ytmp3')">🎵 YouTube → MP3</a>
-        <a onclick="openScreen('ytmp4')">🎬 YouTube → MP4</a>
-        <a onclick="openScreen('tiktok')">🎵 TikTok</a>
-        <a onclick="openScreen('instagram')">📸 Instagram</a>
-        <a onclick="openScreen('spotify')">🎧 Spotify</a>
-    </div>
+    <aside id="sidebar">
+        <button onclick="openScreen('home')">Beranda</button>
+        <button onclick="openScreen('upscale')">Photo HD / Upscale</button>
+        <button onclick="openScreen('ytmp3')">Download MP3 YouTube</button>
+        <button onclick="openScreen('ytmp4')">Download MP4 YouTube</button>
+        <button onclick="openScreen('tiktok')">Download TikTok</button>
+        <button onclick="openScreen('instagram')">Download Instagram</button>
+        <button onclick="openScreen('spotify')">Download Spotify</button>
+    </aside>
 
-    <!-- MAIN PAGE -->
-    <div id="content"></div>
+    <!-- HALAMAN -->
+    <main id="content">
+        <h2>Selamat datang di SCPD_PRODUCTION</h2>
+        <p>Pilih fitur dari menu kiri.</p>
+    </main>
 
-    <!-- JAVASCRIPT -->
+    <!-- SCRIPT -->
     <script src="script.js"></script>
 
 </body>
