@@ -11,6 +11,7 @@
     <!-- FIREBASE CDN -->
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+</head>
 <body>
 
     <!-- HEADER -->
@@ -22,13 +23,27 @@
 
     <!-- SIDEBAR -->
     <aside id="sidebar">
-        <button onclick="openScreen('home')">Beranda</button>
-        <button onclick="openScreen('upscale')">Photo HD / Upscale</button>
-        <button onclick="openScreen('ytmp3')">Download MP3 YouTube</button>
-        <button onclick="openScreen('ytmp4')">Download MP4 YouTube</button>
-        <button onclick="openScreen('tiktok')">Download TikTok</button>
-        <button onclick="openScreen('instagram')">Download Instagram</button>
-        <button onclick="openScreen('spotify')">Download Spotify</button>
+
+        <!-- HOME -->
+        <button onclick="openScreen('home')">🏠 Beranda</button>
+
+        <!-- UPSCALE -->
+        <button onclick="openScreen('upscale')">🖼️ Photo HD / Upscale</button>
+
+        <!-- YOUTUBE -->
+        <button onclick="openScreen('ytmp3')">🎧 YouTube MP3</button>
+        <button onclick="openScreen('ytmp4')">🎬 YouTube MP4</button>
+
+        <!-- TIKTOK -->
+        <button onclick="openScreen('tiktokmp3')">🎧 TikTok MP3</button>
+        <button onclick="openScreen('tiktokmp4')">🎬 TikTok MP4</button>
+
+        <!-- INSTAGRAM -->
+        <button onclick="openScreen('igmp3')">🎧 Instagram MP3</button>
+        <button onclick="openScreen('igmp4')">🎬 Instagram MP4</button>
+
+        <!-- SPOTIFY -->
+        <button onclick="openScreen('spotify')">🎵 Spotify</button>
     </aside>
 
     <!-- HALAMAN -->
