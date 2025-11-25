@@ -50,7 +50,6 @@ function logout() {
     });
 }
 
-
 auth.onAuthStateChanged(user => {
     if (user) showLogoutBtn();
     else showLoginBtn();
@@ -72,6 +71,7 @@ function openScreen(screen) {
 
     let html = "";
 
+    // HOME
     if (screen === "home") {
         html = `
             <h2>Selamat datang di SCPD_PRODUCTION</h2>
@@ -79,50 +79,75 @@ function openScreen(screen) {
         `;
     }
 
+    // UPSCALE
     if (screen === "upscale") {
         html = `
             <h2>Upscale / Photo HD</h2>
-            <p>Fitur upload gambar dan memperbesar kualitas akan ditambahkan di sini.</p>
+            <p>Upload gambar dan nanti server akan memproses menjadi HD.</p>
         `;
     }
 
+
+    /* YOUTUBE */
     if (screen === "ytmp3") {
         html = `
             <h2>Download MP3 YouTube</h2>
-            <input type="text" placeholder="Masukkan link YouTube">
-            <button>Download</button>
+            <input class="tool-input" type="text" placeholder="Masukkan link YouTube">
+            <button class="tool-btn">Download MP3</button>
         `;
     }
 
     if (screen === "ytmp4") {
         html = `
             <h2>Download MP4 YouTube</h2>
-            <input type="text" placeholder="Masukkan link YouTube">
-            <button>Download</button>
+            <input class="tool-input" type="text" placeholder="Masukkan link YouTube">
+            <button class="tool-btn">Download MP4</button>
         `;
     }
 
-    if (screen === "tiktok") {
+
+    /* TIKTOK */
+    if (screen === "tiktokmp3") {
         html = `
-            <h2>Download TikTok</h2>
-            <input type="text" placeholder="Masukkan link TikTok">
-            <button>Download</button>
+            <h2>Download TikTok MP3</h2>
+            <input class="tool-input" type="text" placeholder="Masukkan link TikTok">
+            <button class="tool-btn">Download MP3</button>
         `;
     }
 
-    if (screen === "instagram") {
+    if (screen === "tiktokmp4") {
         html = `
-            <h2>Download Instagram</h2>
-            <input type="text" placeholder="Masukkan link Instagram">
-            <button>Download</button>
+            <h2>Download TikTok MP4</h2>
+            <input class="tool-input" type="text" placeholder="Masukkan link TikTok">
+            <button class="tool-btn">Download MP4</button>
         `;
     }
 
+
+    /* INSTAGRAM */
+    if (screen === "igmp3") {
+        html = `
+            <h2>Download Instagram MP3</h2>
+            <input class="tool-input" type="text" placeholder="Masukkan link Instagram">
+            <button class="tool-btn">Download MP3</button>
+        `;
+    }
+
+    if (screen === "igmp4") {
+        html = `
+            <h2>Download Instagram MP4</h2>
+            <input class="tool-input" type="text" placeholder="Masukkan link Instagram">
+            <button class="tool-btn">Download MP4</button>
+        `;
+    }
+
+
+    /* SPOTIFY */
     if (screen === "spotify") {
         html = `
             <h2>Download Spotify</h2>
-            <input type="text" placeholder="Masukkan link Spotify">
-            <button>Download</button>
+            <input class="tool-input" type="text" placeholder="Masukkan link Spotify">
+            <button class="tool-btn">Download MP3</button>
         `;
     }
 
