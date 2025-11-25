@@ -53,6 +53,7 @@ header {
     transition: .3s;
     padding-top: 10px;
     border-right: 2px solid gold;
+    z-index: 999;
 }
 
 #sidebar.open {
@@ -90,9 +91,39 @@ main {
     border-radius: 5px;
     cursor: pointer;
     border: none;
+    font-weight: bold;
 }
 
 .logout-btn {
     background: red;
     color: white;
+}
+
+/* INPUT + BUTTON STYLE */
+.tool-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gold;
+    background: rgba(255,215,0,0.05);
+    color: gold;
+    font-size: 15px;
+}
+
+.tool-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    background: gold;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tool-btn:hover {
+    background: orange;
 }
